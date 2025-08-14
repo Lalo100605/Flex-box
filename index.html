@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barras con Flexbox</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #4a90e2, #7fff7f, #a64ca6);
+            font-family: Arial, sans-serif;
+        }
+
+        .barra {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.85);
+            color: white;
+            padding: 10px 20px;
+            margin: 15px 0;
+        }
+
+        /* Barra 1: Logo izquierda, texto derecha */
+        .barra1 {
+            justify-content: space-between;
+        }
+
+        /* Barra 2: Logo derecha, texto izquierda */
+        .barra2 {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        /* Barra 3: Logo izquierda y texto pegado a la derecha */
+        .barra3 {
+            justify-content: flex-start;
+        }
+        .barra3 .menu {
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="barra barra1">
+        <div class="logo">LOGOBAKERY</div>
+        <div class="menu">Services Projects About</div>
+    </div>
+
+    <div class="barra barra2">
+        <div class="logo">LOGOBAKERY</div>
+        <div class="menu">Services Projects About</div>
+    </div>
+
+    <div class="barra barra3">
+        <div class="logo">LOGOBAKERY</div>
+        <div class="menu">Services Projects About</div>
+    </div>
+
+</body>
+</html>
