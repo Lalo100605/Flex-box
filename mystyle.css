@@ -2,3 +2,24 @@
     color: purple;
     font-size: 35px;
 }
+
+/* Sección 1 */
+.seccion1 {
+    background-color: red;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Sección 2 */
+.seccion2 {
+    background-color: blue;
+    padding: 20px;
+    color: white;
+}
+
+/* Centrar h1 de secciones */
+h1.secciones {
+    text-align: center;
+}
